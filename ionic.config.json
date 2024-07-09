@@ -1,0 +1,7 @@
+{
+  "name": "data-collect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
