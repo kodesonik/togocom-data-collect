@@ -1,0 +1,63 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" >
+  <ion-searchbar
+    placeholder="Filter Pizza"
+    inputmode="decimal"
+    type="decimal"
+    [debounce]="250"
+   
+    mode="ios"
+  ></ion-searchbar>
+  <ion-segment value="pizza">
+    <ion-segment-button value="pizza">
+      <ion-label>Tout</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="pasta">
+      <ion-label>Site A</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="pasta">
+      <ion-label>Site B</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Inventaires recents</ion-label>
+      <ion-button>Voir tous</ion-button>
+    </ion-list-header>
+
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>23 janvier 2024</ion-label>
+      </ion-item-divider>
+    
+      <ion-item>
+        <ion-label>Label</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Label</ion-label>
+      </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>12 Decembre 2023</ion-label>
+      </ion-item-divider>
+    
+      <ion-item>
+        <ion-label>Label</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Label</ion-label>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
